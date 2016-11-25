@@ -9,8 +9,9 @@ class Arc
   int r;
   int g;
   int b;
+  int a;
   
-  Arc(float cx, float cy, float diameter, float start, float end, float inc, int r, int g, int b)
+  Arc(float cx, float cy, float diameter, float start, float end, float inc, int r, int g, int b, int a)
   {
     this.cx = cx;
     this.cy = cy;
@@ -21,13 +22,14 @@ class Arc
     this.r = r;
     this.g = g;
     this.b = b;
+    this.a = a;
   }
   
   void arcDisplay()
   {
     noFill();
     strokeWeight(1);
-    stroke(r, g, b);
+    stroke(r, g, b, a);
     
     
     arc(cx, cy, diameter, diameter, start, end);
