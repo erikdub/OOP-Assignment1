@@ -1,146 +1,83 @@
 //ArrayList<Arc> arcs = new ArrayList<Arc>();
 
-Arc arc1;
-Arc arc2;
-Arc arc3;
-Arc arc4;
-Arc arc5;
-Arc arc6;
-Arc arc7;
-Arc arc8;
-Arc arc9;
-Arc arc10;
-Arc arc11;
-Arc arc12;
-Arc arc13;
-Arc arc14;
-Arc arc15;
+// arc(x) = new Arc(cx, cy, diam, start, end, speed inc, RED, GREEN, BLUE)
+Arc arc1 = new Arc(220, 250, 30, 0, HALF_PI, 0.1, 40, 170, 255);
+Arc arc2 = new Arc(220, 250, 35, 0, QUARTER_PI, -0.115, 40, 170, 255);
+Arc arc3 = new Arc(220, 250, 40, 0, HALF_PI, 0.13, 200, 0, 0);
+Arc arc4 = new Arc(220, 250, 43, 0, THIRD_PI, -0.07, 220, 220, 220);
+Arc arc5 = new Arc(220, 250, 55, 0, PI/6, 0.05, 200, 0, 0);
+Arc arc6 = new Arc(220, 250, 75, 0, PI, 0.08, 40, 170, 255);
+Arc arc7 = new Arc(220, 250, 80, 0, PI/1.5, -0.1, 200, 0, 0);
+Arc arc8 = new Arc(220, 250, 90, 0, PI/2, 0.06, 200, 0, 0);
+Arc arc9 = new Arc(220, 250, 95, 0, PI/2.5, -0.012, 220, 220, 220);
+Arc arc10 = new Arc(220, 250, 100, 0, PI/2.5, -0.017, 255, 0, 0);
+Arc arc11 = new Arc(220, 250, 105, 0, PI/2.5, 0.036, 40, 170, 255);
+Arc arc12 = new Arc(220, 250, 110, 0, PI/2.5, -0.024, 220, 220, 220);
+Arc arc13 = new Arc(220, 250, 115, 0, PI/2.5, 0.083, 40, 170, 255);
+Arc arc14 = new Arc(220, 250, 120, 0, PI/2.5, -0.090, 200, 0, 0);
+Arc arc15 = new Arc(220, 250, 130, 0, PI*2, 0.001, 40, 170, 255);
 
-Triangle tri1;
-Triangle tri2;
-Triangle tri3;
-Triangle tri4;
-Triangle tri5;
-Triangle tri6;
-Triangle tri7;
-Triangle tri8;
-Triangle tri9;
-Triangle tri10;
-Triangle tri11;
+//top left triangle
+//tri(x) = new Triangle(x1, y1, x2, y2, x3, y3, y2_temp, inc, RED, GREEN, BLUE)
+Triangle tri1 = new Triangle(100, 250, 160, 250, 220, 250, 147, -1);
+Triangle tri2 = new Triangle(100, 250, 160, 250, 220, 250, 158, -1);
+Triangle tri3 = new Triangle(100, 250, 160, 250, 220, 250, 169, -1);
+Triangle tri4 = new Triangle(100, 250, 160, 250, 220, 250, 178, -1);
+Triangle tri5 = new Triangle(100, 250, 160, 250, 220, 250, 187, -1);
+Triangle tri6 = new Triangle(100, 250, 160, 250, 220, 250, 196, -1);
+Triangle tri7 = new Triangle(100, 250, 160, 250, 220, 250, 205, -1);
+Triangle tri8 = new Triangle(100, 250, 160, 250, 220, 250, 214, -1);
+Triangle tri9 = new Triangle(100, 250, 160, 250, 220, 250, 223, -1);
+Triangle tri10 = new Triangle(100, 250, 160, 250, 220, 250, 232, -1);
+Triangle tri11 = new Triangle(100, 250, 160, 250, 220, 250, 241, -1);
 
-Triangle tri12;
-Triangle tri13;
-Triangle tri14;
-Triangle tri15;
-Triangle tri16;
-Triangle tri17;
-Triangle tri18;
-Triangle tri19;
-Triangle tri20;
-Triangle tri21;
-Triangle tri22;
+//top right triangle
+//tri(x) = new Triangle(x1, y1, x2, y2, x3, y3, y2_temp, inc, RED, GREEN, BLUE)
+Triangle tri12 = new Triangle(220, 250, 280, 250, 340, 250, 147, -1);
+Triangle tri13 = new Triangle(220, 250, 280, 250, 340, 250, 158, -1);
+Triangle tri14 = new Triangle(220, 250, 280, 250, 340, 250, 169, -1);
+Triangle tri15 = new Triangle(220, 250, 280, 250, 340, 250, 178, -1);
+Triangle tri16 = new Triangle(220, 250, 280, 250, 340, 250, 187, -1);
+Triangle tri17 = new Triangle(220, 250, 280, 250, 340, 250, 196, -1);
+Triangle tri18 = new Triangle(220, 250, 280, 250, 340, 250, 205, -1);
+Triangle tri19 = new Triangle(220, 250, 280, 250, 340, 250, 214, -1);
+Triangle tri20 = new Triangle(220, 250, 280, 250, 340, 250, 223, -1);
+Triangle tri21 = new Triangle(220, 250, 280, 250, 340, 250, 232, -1);
+Triangle tri22 = new Triangle(220, 250, 280, 250, 340, 250, 241, -1);
 
-Triangle tri23;
-Triangle tri24;
-Triangle tri25;
-Triangle tri26;
-Triangle tri27;
-Triangle tri28;
-Triangle tri29;
-Triangle tri30;
-Triangle tri31;
-Triangle tri32;
-Triangle tri33;
+//bottom left triangle
+//tri(x) = new Triangle(x1, y1, x2, y2, x3, y3, y2_temp, inc, RED, GREEN, BLUE)
+Triangle tri23 = new Triangle(100, 250, 160, 250, 220, 250, 259, 1);
+Triangle tri24 = new Triangle(100, 250, 160, 250, 220, 250, 268, 1);
+Triangle tri25 = new Triangle(100, 250, 160, 250, 220, 250, 277, 1);
+Triangle tri26 = new Triangle(100, 250, 160, 250, 220, 250, 286, 1);
+Triangle tri27 = new Triangle(100, 250, 160, 250, 220, 250, 295, 1);
+Triangle tri28 = new Triangle(100, 250, 160, 250, 220, 250, 304, 1);
+Triangle tri29 = new Triangle(100, 250, 160, 250, 220, 250, 313, 1);
+Triangle tri30 = new Triangle(100, 250, 160, 250, 220, 250, 322, 1);
+Triangle tri31 = new Triangle(100, 250, 160, 250, 220, 250, 331, 1);
+Triangle tri32 = new Triangle(100, 250, 160, 250, 220, 250, 340, 1);
+Triangle tri33 = new Triangle(100, 250, 160, 250, 220, 250, 349, 1);
 
-Triangle tri34;
-Triangle tri35;
-Triangle tri36;
-Triangle tri37;
-Triangle tri38;
-Triangle tri39;
-Triangle tri40;
-Triangle tri41;
-Triangle tri42;
-Triangle tri43;
-Triangle tri44;
+
+//top right triangle
+//tri(x) = new Triangle(x1, y1, x2, y2, x3, y3, y2_temp, inc, RED, GREEN, BLUE)
+Triangle tri34 = new Triangle(220, 250, 280, 250, 340, 250, 259, 1);
+Triangle tri35 = new Triangle(220, 250, 280, 250, 340, 250, 268, 1);
+Triangle tri36 = new Triangle(220, 250, 280, 250, 340, 250, 277, 1);
+Triangle tri37 = new Triangle(220, 250, 280, 250, 340, 250, 286, 1);
+Triangle tri38 = new Triangle(220, 250, 280, 250, 340, 250, 295, 1);
+Triangle tri39 = new Triangle(220, 250, 280, 250, 340, 250, 304, 1);
+Triangle tri40 = new Triangle(220, 250, 280, 250, 340, 250, 313, 1);
+Triangle tri41 = new Triangle(220, 250, 280, 250, 340, 250, 322, 1);
+Triangle tri42 = new Triangle(220, 250, 280, 250, 340, 250, 331, 1);
+Triangle tri43 = new Triangle(220, 250, 280, 250, 340, 250, 340, 1);
+Triangle tri44 = new Triangle(220, 250, 280, 250, 340, 250, 349, 1);
 
 void setup()
 {
   size(1380, 700);
   background(0);
-  
-  // arc(x) = new Arc(cx, cy, diam, start, end, speed inc)
-  arc1 = new Arc(220, 250, 30, 0, HALF_PI, 0.1);
-  arc2 = new Arc(220, 250, 35, 0, QUARTER_PI, -0.115);
-  arc3 = new Arc(220, 250, 40, 0, HALF_PI, 0.13);
-  arc4 = new Arc(220, 250, 43, 0, THIRD_PI, -0.07);
-  arc5 = new Arc(220, 250, 55, 0, PI/6, 0.05);
-  arc6 = new Arc(220, 250, 75, 0, PI, 0.08);
-  arc7 = new Arc(220, 250, 80, 0, PI/1.5, -0.1);
-  arc8 = new Arc(220, 250, 90, 0, PI/2, 0.06);
-  arc9 = new Arc(220, 250, 95, 0, PI/2.5, -0.012);
-  arc10 = new Arc(220, 250, 100, 0, PI/2.5, -0.017);
-  arc11 = new Arc(220, 250, 105, 0, PI/2.5, 0.036);
-  arc12 = new Arc(220, 250, 110, 0, PI/2.5, -0.024);
-  arc13 = new Arc(220, 250, 115, 0, PI/2.5, 0.083);  
-  arc14 = new Arc(220, 250, 120, 0, PI/2.5, -0.090);
-  arc15 = new Arc(220, 250, 130, 0, PI*2, 0.001);
-  
-  //top left triangle
-  //tri(x) = new Triangle(x1, y1, x2, y2, x3, y3, y2_temp, inc)
-  tri1 = new Triangle(100, 250, 160, 250, 220, 250, 147, -1);
-  tri2 = new Triangle(100, 250, 160, 250, 220, 250, 158, -1);
-  tri3 = new Triangle(100, 250, 160, 250, 220, 250, 169, -1);
-  tri4 = new Triangle(100, 250, 160, 250, 220, 250, 178, -1);
-  tri5 = new Triangle(100, 250, 160, 250, 220, 250, 187, -1);
-  tri6 = new Triangle(100, 250, 160, 250, 220, 250, 196, -1);
-  tri7 = new Triangle(100, 250, 160, 250, 220, 250, 205, -1);
-  tri8 = new Triangle(100, 250, 160, 250, 220, 250, 214, -1);
-  tri9 = new Triangle(100, 250, 160, 250, 220, 250, 223, -1);
-  tri10 = new Triangle(100, 250, 160, 250, 220, 250, 232, -1);
-  tri11 = new Triangle(100, 250, 160, 250, 220, 250, 241, -1);
-  
-  //top right triangle
-  //tri(x) = new Triangle(x1, y1, x2, y2, x3, y3, y2_temp, inc)
-  tri12 = new Triangle(220, 250, 280, 250, 340, 250, 147, -1);
-  tri13 = new Triangle(220, 250, 280, 250, 340, 250, 158, -1);
-  tri14 = new Triangle(220, 250, 280, 250, 340, 250, 169, -1);
-  tri15 = new Triangle(220, 250, 280, 250, 340, 250, 178, -1);
-  tri16 = new Triangle(220, 250, 280, 250, 340, 250, 187, -1);
-  tri17 = new Triangle(220, 250, 280, 250, 340, 250, 196, -1);
-  tri18 = new Triangle(220, 250, 280, 250, 340, 250, 205, -1);
-  tri19 = new Triangle(220, 250, 280, 250, 340, 250, 214, -1);
-  tri20 = new Triangle(220, 250, 280, 250, 340, 250, 223, -1);
-  tri21 = new Triangle(220, 250, 280, 250, 340, 250, 232, -1);
-  tri22 = new Triangle(220, 250, 280, 250, 340, 250, 241, -1);
-  
-  //bottom left triangle
-  //tri(x) = new Triangle(x1, y1, x2, y2, x3, y3, y2_temp, inc)
-  tri23 = new Triangle(100, 250, 160, 250, 220, 250, 259, 1);
-  tri24 = new Triangle(100, 250, 160, 250, 220, 250, 268, 1);
-  tri25 = new Triangle(100, 250, 160, 250, 220, 250, 277, 1);
-  tri26 = new Triangle(100, 250, 160, 250, 220, 250, 286, 1);
-  tri27 = new Triangle(100, 250, 160, 250, 220, 250, 295, 1);
-  tri28 = new Triangle(100, 250, 160, 250, 220, 250, 304, 1);
-  tri29 = new Triangle(100, 250, 160, 250, 220, 250, 313, 1);
-  tri30 = new Triangle(100, 250, 160, 250, 220, 250, 322, 1);
-  tri31 = new Triangle(100, 250, 160, 250, 220, 250, 331, 1);
-  tri32 = new Triangle(100, 250, 160, 250, 220, 250, 340, 1);
-  tri33 = new Triangle(100, 250, 160, 250, 220, 250, 349, 1);
-  
-  //top right triangle
-  //tri(x) = new Triangle(x1, y1, x2, y2, x3, y3, y2_temp, inc)
-  tri34 = new Triangle(220, 250, 280, 250, 340, 250, 259, 1);
-  tri35 = new Triangle(220, 250, 280, 250, 340, 250, 268, 1);
-  tri36 = new Triangle(220, 250, 280, 250, 340, 250, 277, 1);
-  tri37 = new Triangle(220, 250, 280, 250, 340, 250, 286, 1);
-  tri38 = new Triangle(220, 250, 280, 250, 340, 250, 295, 1);
-  tri39 = new Triangle(220, 250, 280, 250, 340, 250, 304, 1);
-  tri40 = new Triangle(220, 250, 280, 250, 340, 250, 313, 1);
-  tri41 = new Triangle(220, 250, 280, 250, 340, 250, 322, 1);
-  tri42 = new Triangle(220, 250, 280, 250, 340, 250, 331, 1);
-  tri43 = new Triangle(220, 250, 280, 250, 340, 250, 340, 1);
-  tri44 = new Triangle(220, 250, 280, 250, 340, 250, 349, 1);
 }
 
 void draw()
