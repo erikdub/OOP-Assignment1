@@ -77,10 +77,19 @@ Triangle tri42 = new Triangle(220, 250, 280, 250, 340, 250, 331, 1, 40, 170, 255
 Triangle tri43 = new Triangle(220, 250, 280, 250, 340, 250, 340, 1, 220, 220, 220, 200);
 Triangle tri44 = new Triangle(220, 250, 280, 250, 340, 250, 349, 1, 40, 170, 255, 200);
 
+
+//Ireland Birthrate
+//tri(x) = new Triangle(x1, y1, x2, y2, x3, y3, y2_temp, inc, RED, GREEN, BLUE)
+Triangle jan_stock1 = new Triangle(550, 300, 670, 300, 790, 300, 180, -1, 40, 170, 255, 200);
+Triangle jan_stock2 = new Triangle(550, 300, 670, 300, 790, 300, 210, -1, 40, 170, 255, 200);
+Triangle jan_stock3 = new Triangle(550, 300, 670, 300, 790, 300, 215, -1, 40, 170, 255, 200);
+Triangle jan_stock4 = new Triangle(550, 300, 670, 300, 790, 300, 240, -1, 40, 170, 255, 200);
+Triangle jan_stock5 = new Triangle(550, 300, 670, 300, 790, 300, 245, -1, 40, 170, 255, 200);
+Triangle jan_stock6 = new Triangle(550, 300, 670, 300, 790, 300, 280, -1, 200, 0, 0, 200);
 void setup()
 {
   size(1380, 700);
-  background(0);
+  background(0);  
 }
 
 void draw()
@@ -154,6 +163,13 @@ void draw()
   tri42.triDisplay();
   tri43.triDisplay();
   tri44.triDisplay();
+  
+  jan_stock1.triDisplay();
+  jan_stock2.triDisplay();
+  jan_stock3.triDisplay();
+  jan_stock4.triDisplay();
+  jan_stock5.triDisplay();
+  jan_stock6.triDisplay();
 }
 
 void drawDots()
