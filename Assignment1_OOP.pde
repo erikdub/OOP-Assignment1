@@ -78,18 +78,29 @@ Triangle tri43 = new Triangle(220, 250, 280, 250, 340, 250, 340, 1, 220, 220, 22
 Triangle tri44 = new Triangle(220, 250, 280, 250, 340, 250, 349, 1, 40, 170, 255, 200);
 
 
-//Ireland Birthrate
+//Jan_Stock
 //tri(x) = new Triangle(x1, y1, x2, y2, x3, y3, y2_temp, inc, RED, GREEN, BLUE)
-Triangle jan_stock1 = new Triangle(550, 300, 670, 300, 790, 300, 180, -1, 40, 170, 255, 200);
-Triangle jan_stock2 = new Triangle(550, 300, 670, 300, 790, 300, 210, -1, 40, 170, 255, 200);
-Triangle jan_stock3 = new Triangle(550, 300, 670, 300, 790, 300, 215, -1, 40, 170, 255, 200);
-Triangle jan_stock4 = new Triangle(550, 300, 670, 300, 790, 300, 240, -1, 40, 170, 255, 200);
-Triangle jan_stock5 = new Triangle(550, 300, 670, 300, 790, 300, 245, -1, 40, 170, 255, 200);
-Triangle jan_stock6 = new Triangle(550, 300, 670, 300, 790, 300, 280, -1, 200, 0, 0, 200);
+Triangle jan_stock1 = new Triangle(535, 300, 655, 300, 775, 300, 185, -1, 40, 170, 255, 200);
+Triangle jan_stock2 = new Triangle(535, 300, 655, 300, 775, 300, 210, -1, 40, 170, 255, 200);
+Triangle jan_stock3 = new Triangle(535, 300, 655, 300, 775, 300, 215, -1, 40, 170, 255, 200);
+Triangle jan_stock4 = new Triangle(535, 300, 655, 300, 775, 300, 240, -1, 40, 170, 255, 200);
+Triangle jan_stock5 = new Triangle(535, 300, 655, 300, 775, 300, 245, -1, 40, 170, 255, 200);
+Triangle jan_stock6 = new Triangle(535, 300, 655, 300, 775, 300, 280, -1, 200, 0, 0, 200);
+
+//Feb_Stock
+//tri(x) = new Triangle(x1, y1, x2, y2, x3, y3, y2_temp, inc, RED, GREEN, BLUE)
+Triangle feb_stock1 = new Triangle(655, 300, 775, 300, 895, 300, 185, -1, 40, 170, 255, 200);
+Triangle feb_stock2 = new Triangle(655, 300, 775, 300, 895, 300, 210, -1, 40, 170, 255, 200);
+Triangle feb_stock3 = new Triangle(655, 300, 775, 300, 895, 300, 215, -1, 40, 170, 255, 200);
+Triangle feb_stock4 = new Triangle(655, 300, 775, 300, 895, 300, 240, -1, 40, 170, 255, 200);
+Triangle feb_stock5 = new Triangle(655, 300, 775, 300, 895, 300, 245, -1, 40, 170, 255, 200);
+Triangle feb_stock6 = new Triangle(655, 300, 775, 300, 895, 300, 280, -1, 200, 0, 0, 200);
+
 void setup()
 {
   size(1380, 700);
   background(0);  
+  smooth();
 }
 
 void draw()
@@ -98,7 +109,27 @@ void draw()
   drawDots();
   drawDividers();
   
-  //Display arcs
+  drawArcs();
+  drawTriangles();
+
+  
+  jan_stock1.triDisplay();
+  jan_stock2.triDisplay();
+  jan_stock3.triDisplay();
+  jan_stock4.triDisplay();
+  jan_stock5.triDisplay();
+  jan_stock6.triDisplay();
+  
+  feb_stock1.triDisplay();
+  feb_stock2.triDisplay();
+  feb_stock3.triDisplay();
+  feb_stock4.triDisplay();
+  feb_stock5.triDisplay();
+  feb_stock6.triDisplay();
+}
+
+void drawArcs()
+{
   arc1.arcDisplay();
   arc2.arcDisplay();
   arc3.arcDisplay();
@@ -114,9 +145,11 @@ void draw()
   arc13.arcDisplay();
   arc14.arcDisplay();
   arc15.arcDisplay();
-  
-  //Display triangles
-  tri1.triDisplay();
+}
+
+void drawTriangles()
+{
+    tri1.triDisplay();
   tri2.triDisplay();
   tri3.triDisplay();
   tri4.triDisplay();
@@ -163,13 +196,6 @@ void draw()
   tri42.triDisplay();
   tri43.triDisplay();
   tri44.triDisplay();
-  
-  jan_stock1.triDisplay();
-  jan_stock2.triDisplay();
-  jan_stock3.triDisplay();
-  jan_stock4.triDisplay();
-  jan_stock5.triDisplay();
-  jan_stock6.triDisplay();
 }
 
 void drawDots()

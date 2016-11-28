@@ -32,6 +32,7 @@ class Triangle
   void triDisplay()
   {
     noFill();
+    
     strokeWeight(1);
     stroke(r, g, b, a);
     
