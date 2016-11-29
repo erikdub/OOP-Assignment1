@@ -259,7 +259,27 @@ void draw()
   
   textFont(f,20);
   fill(40, 170, 255);
-  text("A        X     45.7", 30, 110);
+  text("A    FX    45.7", 30, 110);
+  
+  textFont(f,16);
+  fill(220, 220, 220);
+  text("Jan                     Feb                     Mar                      Apr                      May", 643, 355);
+  
+  textFont(f,16);
+  fill(220, 220, 220);
+  text("Stock Increasing", 840, 320);
+  
+  textFont(f,16);
+  fill(220, 220, 220);
+  text("Stock Decreasing", 837, 390);
+  
+  textFont(f,12);
+  fill(40, 170, 255);
+  text("MONTHLY AVERAGES", 510, 82);
+  
+  textFont(f,12);
+  fill(40, 170, 255);
+  text("YEARLY AVERAGES", 25, 82);
 }
 
 void drawArcs()
