@@ -78,23 +78,77 @@ Triangle tri43 = new Triangle(220, 250, 280, 250, 340, 250, 340, 1, 220, 220, 22
 Triangle tri44 = new Triangle(220, 250, 280, 250, 340, 250, 349, 1, 40, 170, 255, 200);
 
 
-//Jan_Stock
+//Jan_Stock_Up
 //tri(x) = new Triangle(x1, y1, x2, y2, x3, y3, y2_temp, inc, RED, GREEN, BLUE)
-Triangle jan_stock1 = new Triangle(535, 300, 655, 300, 775, 300, 185, -1, 40, 170, 255, 200);
-Triangle jan_stock2 = new Triangle(535, 300, 655, 300, 775, 300, 210, -1, 40, 170, 255, 200);
-Triangle jan_stock3 = new Triangle(535, 300, 655, 300, 775, 300, 215, -1, 40, 170, 255, 200);
-Triangle jan_stock4 = new Triangle(535, 300, 655, 300, 775, 300, 240, -1, 40, 170, 255, 200);
-Triangle jan_stock5 = new Triangle(535, 300, 655, 300, 775, 300, 245, -1, 40, 170, 255, 200);
-Triangle jan_stock6 = new Triangle(535, 300, 655, 300, 775, 300, 280, -1, 200, 0, 0, 200);
+Triangle jan_stock1 = new Triangle(535, 300, 655, 300, 775, 300, 185, -1, 40, 170, 255, 100);
+Triangle jan_stock2 = new Triangle(535, 300, 655, 300, 775, 300, 210, -1, 40, 170, 255, 100);
+Triangle jan_stock3 = new Triangle(535, 300, 655, 300, 775, 300, 215, -1, 40, 170, 255, 100);
+Triangle jan_stock4 = new Triangle(535, 300, 655, 300, 775, 300, 240, -1, 40, 170, 255, 100);
+Triangle jan_stock5 = new Triangle(535, 300, 655, 300, 775, 300, 245, -1, 40, 170, 255, 100);
+Triangle jan_stock6 = new Triangle(535, 300, 655, 300, 775, 300, 280, -1, 200, 0, 0, 100);
 
-//Feb_Stock
+//Jan_Stock_Down
 //tri(x) = new Triangle(x1, y1, x2, y2, x3, y3, y2_temp, inc, RED, GREEN, BLUE)
-Triangle feb_stock1 = new Triangle(655, 300, 775, 300, 895, 300, 185, -1, 40, 170, 255, 200);
-Triangle feb_stock2 = new Triangle(655, 300, 775, 300, 895, 300, 210, -1, 40, 170, 255, 200);
-Triangle feb_stock3 = new Triangle(655, 300, 775, 300, 895, 300, 215, -1, 40, 170, 255, 200);
-Triangle feb_stock4 = new Triangle(655, 300, 775, 300, 895, 300, 240, -1, 40, 170, 255, 200);
-Triangle feb_stock5 = new Triangle(655, 300, 775, 300, 895, 300, 245, -1, 40, 170, 255, 200);
-Triangle feb_stock6 = new Triangle(655, 300, 775, 300, 895, 300, 280, -1, 200, 0, 0, 200);
+Triangle jan_stock7 = new Triangle(535, 400, 655, 400, 775, 400, 420, 1, 40, 170, 255, 100);
+Triangle jan_stock8 = new Triangle(535, 400, 655, 400, 775, 400, 430, 1, 40, 170, 255, 100);
+Triangle jan_stock9 = new Triangle(535, 400, 655, 400, 775, 400, 490, 1, 200, 0, 0, 100);
+Triangle jan_stock10 = new Triangle(535, 400, 655, 400, 775, 400, 512, 1, 40, 170, 255, 100);
+Triangle jan_stock11 = new Triangle(535, 400, 655, 400, 775, 400, 530, 1, 40, 170, 255, 100);
+Triangle jan_stock12 = new Triangle(535, 400, 655, 400, 775, 400, 560, 1, 40, 170, 255, 100);
+
+//Feb_Stock_Up
+//tri(x) = new Triangle(x1, y1, x2, y2, x3, y3, y2_temp, inc, RED, GREEN, BLUE)
+Triangle feb_stock1 = new Triangle(655, 300, 775, 300, 895, 300, 110, -1, 40, 170, 255, 200);
+Triangle feb_stock2 = new Triangle(655, 300, 775, 300, 895, 300, 150, -1, 40, 170, 255, 100);
+Triangle feb_stock3 = new Triangle(655, 300, 775, 300, 895, 300, 200, -1, 40, 170, 255, 100);
+Triangle feb_stock4 = new Triangle(655, 300, 775, 300, 895, 300, 205, -1, 220, 220, 220, 255);
+Triangle feb_stock5 = new Triangle(655, 300, 775, 300, 895, 300, 220, -1, 40, 170, 255, 100);
+Triangle feb_stock6 = new Triangle(655, 300, 775, 300, 895, 300, 270, -1, 40, 170, 255, 80);
+
+//Feb_Stock_Down
+//tri(x) = new Triangle(x1, y1, x2, y2, x3, y3, y2_temp, inc, RED, GREEN, BLUE)
+Triangle feb_stock7 = new Triangle(655, 400, 775, 400, 895, 400, 430, 1, 220, 220, 220, 80);
+Triangle feb_stock8 = new Triangle(655, 400, 775, 400, 895, 400, 460, 1, 40, 170, 255, 80);
+Triangle feb_stock9 = new Triangle(655, 400, 775, 400, 895, 400, 465, 1, 40, 170, 255, 80);
+Triangle feb_stock10 = new Triangle(655, 400, 775, 400, 895, 400, 470, 1, 40, 170, 255, 200);
+Triangle feb_stock11 = new Triangle(655, 400, 775, 400, 895, 400, 510, 1, 40, 170, 255, 100);
+Triangle feb_stock12 = new Triangle(655, 400, 775, 400, 895, 400, 520, 1, 40, 170, 255, 255);
+
+//Mar_Stock_Up
+//tri(x) = new Triangle(x1, y1, x2, y2, x3, y3, y2_temp, inc, RED, GREEN, BLUE)
+Triangle mar_stock1 = new Triangle(775, 300, 895, 300, 1015, 300, 130, -1, 40, 170, 255, 100);
+Triangle mar_stock2 = new Triangle(775, 300, 895, 300, 1015, 300, 150, -1, 40, 170, 255, 100);
+Triangle mar_stock3 = new Triangle(775, 300, 895, 300, 1015, 300, 185, -1, 200, 0, 0, 100);
+Triangle mar_stock4 = new Triangle(775, 300, 895, 300, 1015, 300, 200, -1, 200, 0, 0, 200);
+Triangle mar_stock5 = new Triangle(775, 300, 895, 300, 1015, 300, 225, -1, 40, 170, 255, 100);
+Triangle mar_stock6 = new Triangle(775, 300, 895, 300, 1015, 300, 278, -1, 40, 170, 255, 80);
+
+//Mar_Stock_Down
+//tri(x) = new Triangle(x1, y1, x2, y2, x3, y3, y2_temp, inc, RED, GREEN, BLUE)
+Triangle mar_stock7 = new Triangle(775, 400, 895, 400, 1015, 400, 415, 1, 40, 170, 255, 100);
+Triangle mar_stock8 = new Triangle(775, 400, 895, 400, 1015, 400, 450, 1, 40, 170, 255, 100);
+Triangle mar_stock9 = new Triangle(775, 400, 895, 400, 1015, 400, 480, 1, 200, 0, 0, 100);
+Triangle mar_stock10 = new Triangle(775, 400, 895, 400, 1015, 400, 520, 1, 200, 0, 0, 200);
+Triangle mar_stock11 = new Triangle(775, 400, 895, 400, 1015, 400, 580, 1, 40, 170, 255, 100);
+Triangle mar_stock12 = new Triangle(775, 400, 895, 400, 1015, 400, 630, 1, 40, 170, 255, 80);
+
+//Apr_Stock
+//tri(x) = new Triangle(x1, y1, x2, y2, x3, y3, y2_temp, inc, RED, GREEN, BLUE)
+Triangle apr_stock1 = new Triangle(895, 300, 1015, 300, 1135, 300, 140, -1, 220, 220, 220, 255);
+Triangle apr_stock2 = new Triangle(895, 300, 1015, 300, 1135, 300, 210, -1, 40, 170, 255, 220);
+Triangle apr_stock3 = new Triangle(895, 300, 1015, 300, 1135, 300, 215, -1, 200, 0, 0, 200);
+Triangle apr_stock4 = new Triangle(895, 300, 1015, 300, 1135, 300, 217, -1, 220, 220, 220, 200);
+Triangle apr_stock5 = new Triangle(895, 300, 1015, 300, 1135, 300, 230, -1, 220, 220, 220, 200);
+Triangle apr_stock6 = new Triangle(895, 300, 1015, 300, 1135, 300, 280, -1, 200, 0, 0, 100);
+
+//May_Stock
+//tri(x) = new Triangle(x1, y1, x2, y2, x3, y3, y2_temp, inc, RED, GREEN, BLUE)
+Triangle may_stock1 = new Triangle(1015, 300, 1135, 300, 1255, 300, 110, -1, 220, 220, 220, 255);
+Triangle may_stock2 = new Triangle(1015, 300, 1135, 300, 1255, 300, 155, -1, 40, 170, 255, 255);
+Triangle may_stock3 = new Triangle(1015, 300, 1135, 300, 1255, 300, 160, -1, 200, 0, 0, 255);
+Triangle may_stock4 = new Triangle(1015, 300, 1135, 300, 1255, 300, 190, -1, 220, 220, 220, 100);
+Triangle may_stock5 = new Triangle(1015, 300, 1135, 300, 1255, 300, 240, -1, 220, 220, 220, 200);
+Triangle may_stock6 = new Triangle(1015, 300, 1135, 300, 1255, 300, 245, -1, 200, 0, 0, 200);
 
 void setup()
 {
@@ -119,6 +173,12 @@ void draw()
   jan_stock4.triDisplay();
   jan_stock5.triDisplay();
   jan_stock6.triDisplay();
+  jan_stock7.triDisplay();
+  jan_stock8.triDisplay();
+  jan_stock9.triDisplay();
+  jan_stock10.triDisplay();
+  jan_stock11.triDisplay();
+  jan_stock12.triDisplay();
   
   feb_stock1.triDisplay();
   feb_stock2.triDisplay();
@@ -126,6 +186,46 @@ void draw()
   feb_stock4.triDisplay();
   feb_stock5.triDisplay();
   feb_stock6.triDisplay();
+  feb_stock7.triDisplay();
+  feb_stock8.triDisplay();
+  feb_stock9.triDisplay();
+  feb_stock10.triDisplay();
+  feb_stock11.triDisplay();
+  feb_stock12.triDisplay();
+  
+  mar_stock1.triDisplay();
+  mar_stock2.triDisplay();
+  mar_stock3.triDisplay();
+  mar_stock4.triDisplay();
+  mar_stock5.triDisplay();
+  mar_stock6.triDisplay();
+  mar_stock7.triDisplay();
+  mar_stock8.triDisplay();
+  mar_stock9.triDisplay();
+  mar_stock10.triDisplay();
+  mar_stock11.triDisplay();
+  mar_stock12.triDisplay();
+  
+  apr_stock1.triDisplay();
+  apr_stock2.triDisplay();
+  apr_stock3.triDisplay();
+  apr_stock4.triDisplay();
+  apr_stock5.triDisplay();
+  apr_stock6.triDisplay();
+  
+  may_stock1.triDisplay();
+  may_stock2.triDisplay();
+  may_stock3.triDisplay();
+  may_stock4.triDisplay();
+  may_stock5.triDisplay();
+  may_stock6.triDisplay();
+  
+  jan_stock7.triDisplay();
+  jan_stock8.triDisplay();
+  jan_stock9.triDisplay();
+  jan_stock10.triDisplay();
+  jan_stock11.triDisplay();
+  jan_stock12.triDisplay();
 }
 
 void drawArcs()
@@ -149,7 +249,7 @@ void drawArcs()
 
 void drawTriangles()
 {
-    tri1.triDisplay();
+  tri1.triDisplay();
   tri2.triDisplay();
   tri3.triDisplay();
   tri4.triDisplay();
