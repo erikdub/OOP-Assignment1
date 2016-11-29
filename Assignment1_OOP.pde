@@ -168,11 +168,75 @@ Triangle may_stock10 = new Triangle(1015, 400, 1135, 400, 1255, 400, 485, 1, 220
 Triangle may_stock11 = new Triangle(1015, 400, 1135, 400, 1255, 400, 490, 1, 40, 170, 255, 80);
 Triangle may_stock12 = new Triangle(1015, 400, 1135, 400, 1255, 400, 510, 1, 40, 170, 255, 255);
 
+//TOP BOXES
+//Box(float x, float y, float wi, float hei, int r, int g, int b, int a, boolean f)
+Box a1 = new Box(405, 29, 90, 17, 220, 50, 50, 255, true);
+Box a2 = new Box(505, 29, 90, 17, 220, 50, 50, 255, true);
+Box a3 = new Box(605, 29, 90, 17, 40, 170, 255, 255, true);
+Box a4 = new Box(705, 29, 90, 17, 220, 50, 50, 80, true);
+
+Box b1 = new Box(905, 29, 102.5, 17, 220, 50, 50, 255, true);
+Box b2 = new Box(1017.5, 29, 102.5, 17, 40, 170, 255, 255, true);
+Box b3 = new Box(1130, 29, 102.5, 17, 40, 170, 255, 200, true);
+Box b4 = new Box(1242.5, 29, 102.5, 17, 40, 170, 255, 80, true);
+
+//BOTTOM BOXES
+//Box(float x, float y, float wi, float hei, int r, int g, int b, int a, boolean f)
+Box c1 = new Box(25, 550, 30, 10, 40, 170, 255, 255, true);
+Box c2 = new Box(25, 570, 30, 10, 220, 50, 50, 255, true);
+Box c3 = new Box(25, 590, 30, 10, 40, 170, 255, 255, true);
+Box c4 = new Box(25, 610, 30, 10, 220, 50, 50, 80, true);
+
+//Box(float x, float y, float wi, float hei, int r, int g, int b, int a, boolean f)
+Box d1 = new Box(65, 550, 30, 10, 220, 50, 50, 255, true);
+Box d2 = new Box(65, 570, 30, 10, 220, 50, 50, 255, false);
+Box d3 = new Box(65, 590, 30, 10, 40, 170, 255, 255, true);
+Box d4 = new Box(65, 610, 30, 10, 40, 170, 255, 255, false);
+
+//Box(float x, float y, float wi, float hei, int r, int g, int b, int a, boolean f)
+Box e1 = new Box(110, 550, 70, 10, 40, 170, 255, 255, true);
+Box e2 = new Box(110, 570, 70, 10, 40, 170, 255, 255, true);
+Box e3 = new Box(110, 590, 70, 10, 40, 170, 255, 200, true);
+Box e4 = new Box(110, 610, 70, 10, 40, 170, 255, 255, false);
+
+//Box(float x, float y, float wi, float hei, int r, int g, int b, int a, boolean f)
+Box f1 = new Box(190, 550, 30, 10, 220, 50, 50, 255, true);
+Box f2 = new Box(190, 570, 30, 10, 220, 50, 50, 255, false);
+Box f3 = new Box(190, 590, 30, 10, 40, 170, 255, 255, true);
+Box f4 = new Box(190, 610, 30, 10, 40, 170, 255, 255, false);
+
+//Box(float x, float y, float wi, float hei, int r, int g, int b, int a, boolean f)
+Box g1 = new Box(230, 550, 30, 10, 40, 170, 255, 255, false);
+Box g2 = new Box(230, 570, 30, 10, 40, 170, 255, 255, false);
+Box g3 = new Box(230, 590, 30, 10, 40, 170, 255, 255, true);
+Box g4 = new Box(230, 610, 30, 10, 40, 170, 255, 255, false);
+
+//Box(float x, float y, float wi, float hei, int r, int g, int b, int a, boolean f)
+Box h1 = new Box(270, 550, 30, 10, 220, 50, 50, 255, true);
+Box h2 = new Box(270, 570, 30, 10, 40, 170, 255, 255, false);
+Box h3 = new Box(270, 590, 30, 10, 220, 50, 50, 255, true);
+Box h4 = new Box(270, 610, 30, 10, 40, 170, 255, 255, false);
+
+//Box(float x, float y, float wi, float hei, int r, int g, int b, int a, boolean f)
+Box i1 = new Box(310, 550, 70, 10, 40, 170, 255, 255, true);
+Box i2 = new Box(310, 570, 70, 10, 220, 50, 50, 255, false);
+Box i3 = new Box(310, 590, 70, 10, 40, 170, 255, 255, true);
+Box i4 = new Box(310, 610, 70, 10, 40, 170, 255, 255, false);
+
+//Box(float x, float y, float wi, float hei, int r, int g, int b, int a, boolean f)
+Box j1 = new Box(390, 550, 30, 10, 220, 50, 50, 255, true);
+Box j2 = new Box(390, 570, 30, 10, 220, 50, 50, 255, false);
+Box j3 = new Box(390, 590, 30, 10, 40, 170, 255, 255, false);
+Box j4 = new Box(390, 610, 30, 10, 40, 170, 255, 255, false);
+
+PFont f;
 void setup()
 {
   size(1380, 700);
   background(0);  
   smooth();
+  
+  f = createFont("Arial", 16, true);
 }
 
 void draw()
@@ -183,73 +247,19 @@ void draw()
   
   drawArcs();
   drawTriangles();
-
+  drawStockTriangles();
+  drawDisplayBoxes();
   
-  jan_stock1.triDisplay();
-  jan_stock2.triDisplay();
-  jan_stock3.triDisplay();
-  jan_stock4.triDisplay();
-  jan_stock5.triDisplay();
-  jan_stock6.triDisplay();
-  jan_stock7.triDisplay();
-  jan_stock8.triDisplay();
-  jan_stock9.triDisplay();
-  jan_stock10.triDisplay();
-  jan_stock11.triDisplay();
-  jan_stock12.triDisplay();
+  textFont(f,16);
+  fill(40, 170, 255);
+  text("Screen ID 00256",30,44);
   
-  feb_stock1.triDisplay();
-  feb_stock2.triDisplay();
-  feb_stock3.triDisplay();
-  feb_stock4.triDisplay();
-  feb_stock5.triDisplay();
-  feb_stock6.triDisplay();
-  feb_stock7.triDisplay();
-  feb_stock8.triDisplay();
-  feb_stock9.triDisplay();
-  feb_stock10.triDisplay();
-  feb_stock11.triDisplay();
-  feb_stock12.triDisplay();
+  fill(200, 0, 0);
+  text("FD-X6.V3", 225, 44);
   
-  mar_stock1.triDisplay();
-  mar_stock2.triDisplay();
-  mar_stock3.triDisplay();
-  mar_stock4.triDisplay();
-  mar_stock5.triDisplay();
-  mar_stock6.triDisplay();
-  mar_stock7.triDisplay();
-  mar_stock8.triDisplay();
-  mar_stock9.triDisplay();
-  mar_stock10.triDisplay();
-  mar_stock11.triDisplay();
-  mar_stock12.triDisplay();
-  
-  apr_stock1.triDisplay();
-  apr_stock2.triDisplay();
-  apr_stock3.triDisplay();
-  apr_stock4.triDisplay();
-  apr_stock5.triDisplay();
-  apr_stock6.triDisplay();
-  apr_stock7.triDisplay();
-  apr_stock8.triDisplay();
-  apr_stock9.triDisplay();
-  apr_stock10.triDisplay();
-  apr_stock11.triDisplay();
-  apr_stock12.triDisplay();
-  
-  may_stock1.triDisplay();
-  may_stock2.triDisplay();
-  may_stock3.triDisplay();
-  may_stock4.triDisplay();
-  may_stock5.triDisplay();
-  may_stock6.triDisplay();
-  may_stock7.triDisplay();
-  may_stock8.triDisplay();
-  may_stock9.triDisplay();
-  may_stock10.triDisplay();
-  may_stock11.triDisplay();
-  may_stock12.triDisplay();
-
+  textFont(f,20);
+  fill(40, 170, 255);
+  text("A        X     45.7", 30, 110);
 }
 
 void drawArcs()
@@ -320,6 +330,118 @@ void drawTriangles()
   tri42.triDisplay();
   tri43.triDisplay();
   tri44.triDisplay();
+}
+
+void drawDisplayBoxes()
+{
+  a1.displayBox();
+  a2.displayBox();
+  a3.displayBox();
+  a4.displayBox();
+  b1.displayBox();
+  b2.displayBox();
+  b3.displayBox();
+  b4.displayBox();
+  c1.displayBox();
+  c2.displayBox();
+  c3.displayBox();
+  c4.displayBox();
+  d1.displayBox();
+  d2.displayBox();
+  d3.displayBox();
+  d4.displayBox();
+  e1.displayBox();
+  e2.displayBox();
+  e3.displayBox();
+  e4.displayBox();
+  f1.displayBox();
+  f2.displayBox();
+  f3.displayBox();
+  f4.displayBox();
+  g1.displayBox();
+  g2.displayBox();
+  g3.displayBox();
+  g4.displayBox();
+  h1.displayBox();
+  h2.displayBox();
+  h3.displayBox();
+  h4.displayBox();
+  i1.displayBox();
+  i2.displayBox();
+  i3.displayBox();
+  i4.displayBox();
+  j1.displayBox();
+  j2.displayBox();
+  j3.displayBox();
+  j4.displayBox();
+}
+
+void drawStockTriangles()
+{
+    jan_stock1.triDisplay();
+  jan_stock2.triDisplay();
+  jan_stock3.triDisplay();
+  jan_stock4.triDisplay();
+  jan_stock5.triDisplay();
+  jan_stock6.triDisplay();
+  jan_stock7.triDisplay();
+  jan_stock8.triDisplay();
+  jan_stock9.triDisplay();
+  jan_stock10.triDisplay();
+  jan_stock11.triDisplay();
+  jan_stock12.triDisplay();
+  
+  feb_stock1.triDisplay();
+  feb_stock2.triDisplay();
+  feb_stock3.triDisplay();
+  feb_stock4.triDisplay();
+  feb_stock5.triDisplay();
+  feb_stock6.triDisplay();
+  feb_stock7.triDisplay();
+  feb_stock8.triDisplay();
+  feb_stock9.triDisplay();
+  feb_stock10.triDisplay();
+  feb_stock11.triDisplay();
+  feb_stock12.triDisplay();
+  
+  mar_stock1.triDisplay();
+  mar_stock2.triDisplay();
+  mar_stock3.triDisplay();
+  mar_stock4.triDisplay();
+  mar_stock5.triDisplay();
+  mar_stock6.triDisplay();
+  mar_stock7.triDisplay();
+  mar_stock8.triDisplay();
+  mar_stock9.triDisplay();
+  mar_stock10.triDisplay();
+  mar_stock11.triDisplay();
+  mar_stock12.triDisplay();
+  
+  apr_stock1.triDisplay();
+  apr_stock2.triDisplay();
+  apr_stock3.triDisplay();
+  apr_stock4.triDisplay();
+  apr_stock5.triDisplay();
+  apr_stock6.triDisplay();
+  apr_stock7.triDisplay();
+  apr_stock8.triDisplay();
+  apr_stock9.triDisplay();
+  apr_stock10.triDisplay();
+  apr_stock11.triDisplay();
+  apr_stock12.triDisplay();
+  
+  may_stock1.triDisplay();
+  may_stock2.triDisplay();
+  may_stock3.triDisplay();
+  may_stock4.triDisplay();
+  may_stock5.triDisplay();
+  may_stock6.triDisplay();
+  may_stock7.triDisplay();
+  may_stock8.triDisplay();
+  may_stock9.triDisplay();
+  may_stock10.triDisplay();
+  may_stock11.triDisplay();
+  may_stock12.triDisplay();
 }
 
 void drawDots()
